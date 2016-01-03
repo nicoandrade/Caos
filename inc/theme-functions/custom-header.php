@@ -23,9 +23,9 @@
 function caos_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'caos_custom_header_args', array(
 		'default-image'          => '',
-		'default-text-color'     => '383838',
+		'default-text-color'     => 'FFFFFF',
 		'width'                  => 1905,
-		'height'                 => 42,
+		'height'                 => 92,
 		'flex-height'            => true,
 		'flex-width'            => true,
 		'wp-head-callback'       => 'caos_header_style',
@@ -66,7 +66,7 @@ function caos_header_style() {
 		.logo_container .ql_logo {
 			color: #<?php echo esc_attr( $header_text_color ); ?>;
 		}
-		#primary-menu a {
+		#jqueryslidemenu ul.nav > li > a {
 			color: #<?php echo esc_attr( $header_text_color ); ?>;
 			opacity: 0.8;
 		}

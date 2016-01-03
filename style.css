@@ -2208,7 +2208,7 @@ Payments Options
 /*Comments																	 */
 /*===========================================================================*/
 #comments {
-  margin-bottom: 70px;
+  margin: 70px 0;
   padding: 0 30%;
 }
 #comments h3 {
@@ -3729,6 +3729,9 @@ textarea {
   #respond .input-wrap {
     width: 100%;
   }
+  #comments {
+    padding: 0 5%;
+  }
   /*
 	Footer
 	========================================== 
@@ -3800,6 +3803,9 @@ textarea {
   #respond .input-wrap {
     width: 46%;
   }
+  #comments {
+    padding: 0 15%;
+  }
 }
 /*
 	// Medium Breakpoint
@@ -3852,34 +3858,6 @@ textarea {
     padding: 40px;
   }
   /*
-	Phone Section
-	---------------------------------------*/
-  .phone-section {
-    padding: 4% 6% 2% 6%;
-  }
-  .phone-services .service {
-    width: 45%;
-    margin: 0 2% 5%;
-  }
-  /*
-	Pricing Section
-	---------------------------------------*/
-  .cd-has-margins .cd-pricing-list > li {
-    width: 30%;
-    margin: 0 1%;
-  }
-  .cd-value {
-    font-size: 68px;
-    font-size: 4.25rem;
-  }
-  .cd-currency {
-    font-size: 26px;
-    font-size: 1.625rem;
-  }
-  .cd-has-margins .cd-select {
-    padding: 1.2em 0;
-  }
-  /*
 	Sidebar
 	========================================== 
 	*/
@@ -3889,6 +3867,9 @@ textarea {
   /*Comments Form---------------------------------------------------*/
   #respond .input-wrap {
     width: 47%;
+  }
+  #comments {
+    padding: 0 25%;
   }
 }
 /*
