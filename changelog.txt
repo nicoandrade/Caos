@@ -1,3 +1,14 @@
+* 1.0.3 - 03/02/2016
+====================
+- Chaged: Screenshot
+
+
+* 1.0.2 - 02/02/2016
+====================
+- Prefixed: nav function
+- Added: License and links for images used in screenshot
+
+
 * 1.0.1 - 04/01/2016
 ====================
 - Complete Theme Update

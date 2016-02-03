@@ -78,5 +78,13 @@ Source: https://github.com/afarkas/html5shiv
 [Lato Font](https://www.google.com/fonts/specimen/Lato) by Łukasz Dziedzic - Licensed under the [SIL Open Font License, 1.1](http://scripts.sil.org/OFL).
 
 Images from Unsplash
+https://unsplash.com/photos/Aa8_X_YgrO4 by Anthony DELANOIX
+https://unsplash.com/photos/aRXPJnXQ9lU by Thomas Lefebvre
+https://unsplash.com/photos/D2K1UZr4vxk by Sylwia Bartyzel
+https://unsplash.com/photos/UWRqlJcDCXA by Carli Jean
+https://unsplash.com/photos/eOpewngf68w by Tim Swaan
+https://unsplash.com/photos/VNseEaTt9w4 by Sven Scheuermeier
+https://unsplash.com/photos/5UFn4Ly4jwQ by Eduardo Espinoza Raggi
 License: https://unsplash.com/license
 Source: https://unsplash.com
+https://www.pexels.com/photo/lights-light-bulb-idea-2830/ License: https://www.pexels.com/photo-license/

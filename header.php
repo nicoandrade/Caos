@@ -65,8 +65,8 @@ if( is_plugin_active( 'rest-api/plugin.php' ) ){
                                 'menu_id' => 'primary-menu',
                                 'depth'             => 3,
                                 'menu_class'        => 'nav',
-                                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                                'walker'            => new wp_bootstrap_navwalker()
+                                'fallback_cb'       => 'caos_bootstrap_navwalker::fallback',
+                                'walker'            => new caos_bootstrap_navwalker()
                             ));
                             ?>
                         </nav>

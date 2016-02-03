@@ -193,7 +193,7 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 
 	// Bootstrap Walker
-	require get_template_directory() . '/inc/theme-functions/wp_bootstrap_navwalker.php';
+	require get_template_directory() . '/inc/theme-functions/caos_bootstrap_navwalker.php';
 
 	// Custom Header
 	require get_template_directory() . '/inc/theme-functions/custom-header.php';
