@@ -27,6 +27,11 @@ So, the first step would be to create a new menu under the “Appearance > Menus
 And, for the last part, be sure to select “Social” for the “Theme Location” before saving your menu.
 
 
+== Development ==
+You can help developing Caos in:
+https://github.com/nicoandrade/Caos
+
+
 == Credits ==
 
 Caos WordPress Theme, Copyright 2015 Nicolas Andrade

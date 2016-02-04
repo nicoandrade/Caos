@@ -5,7 +5,7 @@
  * @param array $data Options for the function.
  * @return string|null Post title for the latest,  * or null if none.
  */
-function my_awesome_func( $data ) {
+function caos_metadata_endpoints( $data ) {
 
     $args = array( 'p' => $data['id'] );
     $the_query = new WP_Query( $args );
@@ -78,7 +78,7 @@ function my_awesome_func( $data ) {
 add_action( 'rest_api_init', function () {
     register_rest_route( 'caos/v1', '/metadata/(?P<id>\d+)', array(
         'methods' => 'GET',
-        'callback' => 'my_awesome_func',
+        'callback' => 'caos_metadata_endpoints',
         /*'args' => array(
             'id' => array(
                 'validate_callback' => 'is_numeric'
