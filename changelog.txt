@@ -1,3 +1,8 @@
+* 1.0.6 - 03/03/2016
+====================
+- Added: Theme info page
+
+
 * 1.0.5 - 20/02/2016
 ====================
 - Fixed: issue with anchors in post content

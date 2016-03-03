@@ -16,6 +16,17 @@ if ( ! function_exists( 'caos_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function caos_setup() {
+
+	/*
+	 * Defines Constant
+	 */
+	$caos_theme_data = wp_get_theme();
+	define( 'QL_STORE_URL', 'https://www.quemalabs.com' );
+	define( 'QL_THEME_NAME', $caos_theme_data['Name'] );
+	define( 'QL_THEME_VERSION', $caos_theme_data['Version'] );
+	define( 'QL_THEME_SLUG', sanitize_title( $caos_theme_data['Name'] ) );
+	define( 'QL_THEME_AUTHOR', $caos_theme_data['Author'] );
+
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
@@ -203,3 +214,17 @@ require get_template_directory() . '/inc/jetpack.php';
 
 	// Endpoints for Rest Api
 	require get_template_directory() . '/inc/rest-api/endpoints.php';
+
+	// Theme Info Page
+	require get_template_directory() . '/inc/theme-functions/theme-info-page.php';
+
+
+
+/**
+ * Redirect after theme installation
+ *
+ */
+function caos_theme_redirect () {
+	wp_redirect( admin_url( 'themes.php?page=caos_theme-info' ) );
+}
+add_action( 'after_switch_theme', 'caos_theme_redirect' );
