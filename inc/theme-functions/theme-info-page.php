@@ -36,7 +36,7 @@ function quemalabs_getting_started_page() {
 					}
 					?>
 					<li><a href="?page=caos_theme-info&amp;tab=docs" class="<?php echo ( $tab == 'docs' ) ? ' active' : ''; ?>"><i class="fa fa-file-text-o"></i> <?php esc_html_e( 'Documentation', 'caos' ); ?></a></li>
-					<!-- <li><a href="https://www.quemalabs.com/theme/coni-pro/" target="_blank"><i class="fa fa-star-o"></i> <?php esc_html_e( 'PRO Version', 'caos' ); ?></a></li> -->
+					<li><a href="https://www.quemalabs.com/theme/caos-pro/" target="_blank"><i class="fa fa-star-o"></i> <?php esc_html_e( 'PRO Version', 'caos' ); ?></a></li>
 					<li><a href="?page=caos_theme-info&amp;tab=more-themes" class="<?php echo ( $tab == 'more-themes' ) ? ' active' : ''; ?>"><i class="fa fa-wordpress"></i> <?php esc_html_e( 'More Themes', 'caos' ); ?></a></li>
 					 
 				</ul>

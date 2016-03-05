@@ -75,7 +75,8 @@ function caos_customize_js() {
 
 	wp_enqueue_script( 'caos_customizer_top_buttons', get_template_directory_uri() . '/js/theme-customizer-top-buttons.js', array( 'jquery' ), true  );
 	wp_localize_script( 'caos_customizer_top_buttons', 'topbtns', array(
-			'pro' => esc_html__( 'More Themes', 'caos' )
+			'pro' => esc_html__( 'View PRO version', 'caos' ),
+            'documentation' => esc_html__( 'Documentation', 'caos' )
 	) );
 	
 	wp_enqueue_script( 'caos_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-controls' ), '20151024', true );
