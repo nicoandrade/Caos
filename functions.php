@@ -217,14 +217,3 @@ require get_template_directory() . '/inc/jetpack.php';
 
 	// Theme Info Page
 	require get_template_directory() . '/inc/theme-functions/theme-info-page.php';
-
-
-
-/**
- * Redirect after theme installation
- *
- */
-function caos_theme_redirect () {
-	wp_redirect( admin_url( 'themes.php?page=caos_theme-info' ) );
-}
-add_action( 'after_switch_theme', 'caos_theme_redirect' );
