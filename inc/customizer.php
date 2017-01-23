@@ -36,6 +36,19 @@ function caos_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
 
+	/*
+	PRO Version
+	------------------------------ */
+	$wp_customize->add_section( 'caos_pro_section', array(
+		'title' => esc_attr__( 'PRO version', 'caos' ),
+		'priority' => 1,
+	) );
+	$wp_customize->add_setting( 'caos_probtn', array( 'default' => '', 'sanitize_callback' => 'caos_sanitize_text', ) );
+	$wp_customize->add_control( new caos_Display_Text_Control( $wp_customize, 'caos_probtn', array(
+		'section' => 'caos_pro_section', // Required, core or custom.
+		'label' => sprintf( __( 'Check out the PRO version for more features. %s View PRO version %s', 'caos' ), '<a target="_blank" class="button" href="https://www.quemalabs.com/theme/caos-pro/" style="width: 80%; margin: 10px auto; display: block; text-align: center;">', '</a>' ),
+	) ) );
+
 
 
 }
@@ -72,12 +85,6 @@ add_action( 'customize_preview_init', 'caos_customize_preview_js' );
  * Load scripts on the Customizer not the Previewer (iframe)
  */
 function caos_customize_js() {
-
-	wp_enqueue_script( 'caos_customizer_top_buttons', get_template_directory_uri() . '/js/theme-customizer-top-buttons.js', array( 'jquery' ), true  );
-	wp_localize_script( 'caos_customizer_top_buttons', 'topbtns', array(
-			'pro' => esc_html__( 'View PRO version', 'caos' ),
-            'documentation' => esc_html__( 'Documentation', 'caos' )
-	) );
 	
 	wp_enqueue_script( 'caos_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-controls' ), '20151024', true );
 

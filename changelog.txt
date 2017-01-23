@@ -1,3 +1,8 @@
+* 1.0.9 - 29/09/2016
+====================
+- Changed: PRO link on customizer
+
+
 * 1.0.8 - 27/09/2016
 ====================
 - Removed: Redirection after teheme install
